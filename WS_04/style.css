@@ -102,6 +102,7 @@
         text-align: center;
         margin: 0 auto;
         width: 25%;
+        font: italic small-caps bold 16px/2 cursive;
       }
       .flex-container {
         display: flex;
@@ -116,10 +117,12 @@
         text-align: center;
         margin: 20px;
         width: 25%;
+        font: italic small-caps bold 16px/2 cursive;
       }
       .responsive-box {
         padding: 20px;
         text-align: center;
+        font: italic small-caps bold 16px/2 cursive;
     }
 
         @media (max-width: 1249px) {
