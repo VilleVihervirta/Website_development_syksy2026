@@ -41,34 +41,7 @@
         color: #77ac;
         }
     a {
-        color: #f2f2f2;
-          }   
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-      color: #f2f2f2;
-      background-color: #444444;
-      width: 25%;
-    }  
-    label {
-      font-weight: bold;
-    } 
-    input[type="text"], input[type="email"] {
-      padding: 8px;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-    }
-    input[type="submit"] {
-      background-color: #9a586c;
-      color: #f2f2f2;
-      padding: 10px;
-      border: 5px solid #999999;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    input[type="submit"]:hover {
-      background-color: #77ac;
+        color: #f2f2f2;   
     }
     </style>
     <link rel="stylesheet" href="style.css">
@@ -81,6 +54,31 @@
 </div>
 <div class="animation-box"></div>
     <h4 style="color: #f9f9f9; text-align: center; border: 1px solid #77ac; padding: 10px;">Dont take this site seriously!</h4>
+    <header>
+  <h1>My Website</h1>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="./gallery.html">Gallery</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<div class="responsive-box">Resize the window to see the effect</div>
+<div class="grid-container">
+  <div class="grid-item">1</div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">3</div>
+  <div class="grid-item">4</div>
+  <div class="grid-item">5</div>
+  <div class="grid-item">6</div>
+</div>
+<main>
+  <div class="flex-container">
+  <div class="box">Box 1</div>
+  <div class="box">Box 2</div>
+  <div class="box">Box 3</div>
+</div>
     <h1>Website of Ville Vihervirta</h1>
     <h2>Welcome to my website!</h2>
     <p>Hellou xD Ville here.</p>
@@ -133,16 +131,13 @@
     </table>
     <br>
     <br>
-    <img src="/WS_01/Screenshot%202026-10-27%20203504.png" alt="Webcam screenshot showing Ville Vihervirta facing the camera.">
-    <p>This is a placeholder image.</p>
-    <img src="https://raw.githubusercontent.com/VilleVihervirta/Website_development_syksy2026/refs/heads/main/WS_01/Screenshot%202026-10-27%20203504.png" alt="Webcam screenshot showing Ville Vihervirta facing the camera." class="filter-image">
-    <h3>Contact Me</h3>
-    <form>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name"><br><br>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email"><br><br>
-    <input type="submit" value="Submit">
-    </form>
+      <section id="about">
+    <h2>About Me</h2>
+    <p>This is a paragraph about me.</p>
+      </section>
+    </main>
+    <footer>
+  <p>Copyright 2026</p>
+</footer>
 </body>
 </html>
