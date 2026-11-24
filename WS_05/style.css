@@ -1,0 +1,203 @@
+        nav {
+          background-color: #333333;
+          padding: 10px;
+          text-align: center;
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          margin-bottom: 20px;
+          border: 1px solid #77ac;
+          width: 25%;
+          /*flex-direction: column;*/
+          /*justify-content: center;*/
+
+          }
+        nav a {
+          color: #f2f2f2;
+          text-decoration: none;
+          margin: 0 15px;
+          font-size: 18px;
+          } 
+        .content-box {
+          padding: 25px;
+          margin: 15px;
+          background-color: #333333;
+          border: 5px solid #999999;
+          text-align: center;
+        }
+        .transition-button {
+        background-color: #77ac;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .transition-button:hover {
+        background-color: #9a586c;
+      }
+      .animation-box {
+        width: 50px;
+        height: 50px;
+        background-color: #77ac;
+        position: relative;
+        animation: move 5s infinite alternate;
+      }
+      
+      @keyframes move {
+        from {
+          left: 0;
+        }
+        to {
+          left: 1450px;
+        }
+      }
+      .pseudo-list li:nth-child(odd) {
+        background-color: #9a586c;
+        color: #f2f2f2;
+        text-align: center;
+        width: 25%;
+      }
+       .pseudo-list li:nth-child(even) {
+        background-color: #77ac;
+        color: #f2f2f2;
+        text-align: center;
+        width: 25%;
+      }
+      .filter-image {
+        filter: grayscale(100%);
+        transition: filter 0.3s ease;
+      }
+       .filter-image:hover {
+        filter: grayscale(0%);
+      }
+      .quote {
+        position: relative;
+        padding-left: 25px;
+        font-style: italic;
+        font: italic small-caps bold 16px/2 cursive;
+        color: #9a586c;
+      }
+       .quote::before {
+        content: '“';
+        font-size: 40px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: #77ac;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+      }
+
+      .grid-item {
+        background-color: #444444;
+        border: 1px solid #77ac;
+        color:#f2f2f2;
+        padding: 20px;
+        text-align: center;
+        margin: 0 auto;
+        width: 25%;
+        font: italic small-caps bold 16px/2 cursive;
+      }
+      .flex-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .box {
+        background-color: #444444;
+        border: 1px solid #9a586c;
+        color:#f2f2f2;
+        padding: 20px;
+        text-align: center;
+        margin: 20px;
+        width: 25%;
+        font: italic small-caps bold 16px/2 cursive;
+      }
+      .responsive-box {
+        padding: 20px;
+        text-align: center;
+        font: italic small-caps bold 16px/2 cursive;
+    }
+
+        @media (max-width: 1249px) {
+      .responsive-box {
+        background-color: #77ac;
+        border: 1px solid #9a586c;
+        color:#f2f2f2;
+        margin: 20px;
+    }
+    }
+
+      @media (min-width: 1250px) {
+     .responsive-box {
+        background-color: #444444;
+        border: 1px solid #77ac;
+        color:#f2f2f2;
+        margin: 20px;
+  }
+  }
+  /* Tehtävä 5 */
+  .responsive-container {
+      display: flex;
+      flex-wrap: wrap;
+      color: #9a586c;
+      text-align: center;
+      padding: 10px;
+    }
+    
+    .column {
+      flex: 1;
+      padding: 20px;
+      border: 1px solid #9a586c;
+    }
+    
+    @media (max-width: 1249px) {
+      .column {
+        flex: 100%;
+      }
+    }
+    .responsive-image {
+      max-width: 50%;
+      height: auto;
+    }
+    .media-query-box2 {
+      padding: 20px;
+      text-align: center;
+      font: italic small-caps bold 16px/2 cursive;
+      border: 1px solid #f2f2f2;
+    }
+    
+    @media (max-width: 1249px) {
+      .media-query-box2 {
+        background-color: #77ac;
+        color: #1f1f1f;
+      }
+    }
+    
+    @media (min-width: 1250px) {
+      .media-query-box2 {
+        background-color: #9a586c;
+        color: #f2f2f2;
+      }
+    }
+    .responsive-nav .nav-list {
+      display: flex;
+      list-style: none;
+    }
+    
+    @media (max-width: 1249px) {
+      .responsive-nav .nav-list {
+        display: none;
+      }
+    
+      .responsive-nav .menu-toggle {
+        display: block;
+      }
+    }
+    /* Tehtävä 5 loppuu */
